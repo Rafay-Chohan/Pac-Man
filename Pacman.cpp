@@ -80,7 +80,7 @@ int main()
         //Making Of Hero
         Hero hero;//Object of Hero
         sf::Texture heroTexture;//Object for hero texture
-        heroTexture.loadFromFile("D:\\SFML Template\\sfml_template\\icons\\hero R.png");
+        heroTexture.loadFromFile("icons\\hero R.png");
         hero.setTexture(&heroTexture);
         sf::Vector2f heroPos(50, 50);//Setting initial position of hero
         hero.setpos(heroPos);
@@ -92,9 +92,9 @@ int main()
         sf::Vector2f enemyPos[3];
         float enemyVelocityX[3], enemyVelocityY[3];
         sf::Texture enemyTexture[3];
-        enemyTexture[0].loadFromFile("D:\\SFML Template\\sfml_template\\icons\\enemy red.jpg");
-        enemyTexture[1].loadFromFile("D:\\SFML Template\\sfml_template\\icons\\enemy green.png");
-        enemyTexture[2].loadFromFile("D:\\SFML Template\\sfml_template\\icons\\enemy pink.jpg");
+        enemyTexture[0].loadFromFile("icons\\enemy red.jpg");
+        enemyTexture[1].loadFromFile("icons\\enemy green.png");
+        enemyTexture[2].loadFromFile("icons\\enemy pink.jpg");
         for (int i = 0; i < 3; i++)
         {
                 enemyPos[i].x = 620;
@@ -179,7 +179,7 @@ int main()
                         {
                                         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))//condition for up key 
                                         {
-                                                heroTexture.loadFromFile("D:\\SFML Template\\sfml_template\\icons\\hero up.png");
+                                                heroTexture.loadFromFile("icons\\hero up.png");
                                                 heroVelocityY = -2;
                                                 heroVelocityX = 0;
                                         }
@@ -188,7 +188,7 @@ int main()
                         {
                                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))//condition for Down key 
                                 {
-                                        heroTexture.loadFromFile("D:\\SFML Template\\sfml_template\\icons\\hero down.png");
+                                        heroTexture.loadFromFile("icons\\hero down.png");
                                         heroVelocityY = +2;
                                         heroVelocityX = 0;
                                 }
@@ -200,7 +200,7 @@ int main()
                         {
                                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))//condition for Right key  
                                 {
-                                        heroTexture.loadFromFile("D:\\SFML Template\\sfml_template\\icons\\hero R.png");
+                                        heroTexture.loadFromFile("icons\\hero R.png");
                                         heroVelocityY = 0;
                                         heroVelocityX = +2;
                                 }
@@ -209,7 +209,7 @@ int main()
                         {
                                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))//condition for Left key  
                                 {
-                                        heroTexture.loadFromFile("D:\\SFML Template\\sfml_template\\icons\\hero L.png");
+                                        heroTexture.loadFromFile("icons\\hero L.png");
                                         heroVelocityY = 0;
                                         heroVelocityX = -2;
                                 }
@@ -351,7 +351,7 @@ int main()
                         {
                                 window.clear();
                                 block[4].setpos(sf::Vector2f(490, 255));
-                                enemyTexture[0].loadFromFile("D:\\SFML Template\\sfml_template\\icons\\game over.png");
+                                enemyTexture[0].loadFromFile("icons\\game over.png");
                                 block[4].setTexture(&enemyTexture[0]);
                                 block[4].drawBlock(window);
                                 window.display();
@@ -377,7 +377,7 @@ int main()
                 {
                         window.clear();
                         block[4].setpos(sf::Vector2f(490, 255));
-                        enemyTexture[0].loadFromFile("D:\\SFML Template\\sfml_template\\icons\\win.png");
+                        enemyTexture[0].loadFromFile("icons\\win.png");
                         block[4].setTexture(&enemyTexture[0]);
                         block[4].drawBlock(window);
                         window.display();
